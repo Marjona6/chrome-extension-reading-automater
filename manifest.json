@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "Reading List Automater",
+    "short_name": "Automater",
+    "description": "This extension lets you collect articles as you browse and set them aside to read later. You can set a day or time to read through your saved articles, and the extension will help you easily get through your reading list so you can stay up to date on the information you need to know.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
