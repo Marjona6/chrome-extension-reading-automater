@@ -1,26 +1,26 @@
 {
-    "manifest_version": 2,
+  "manifest_version": 2,
 
-    "name": "Reading List Automater",
-    "short_name": "Automater",
-    "description": "This extension lets you collect articles as you browse and set them aside to read later. You can set a day or time to read through your saved articles, and the extension will help you easily get through your reading list so you can stay up to date on the information you need to know.",
-    "version": "1.0",
+  "name": "Reading List Automater",
+  "short_name": "Automater",
+  "description": "This extension lets you collect articles as you browse and set them aside to read later. You can set a day or time to read through your saved articles, and the extension will help you easily get through your reading list so you can stay up to date on the information you need to know.",
+  "version": "1.0",
 
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
-    },
-    "background": {
-        "scripts": ["main.js"]
-    },
-     "icons": {
-          "16": "icon-16.png"
-     //      "48": "icon-small.png",
-     //      "128": "icon-large.png"
-        },
-    "permissions": [
-    "activeTab",
-    "storage",
-    "contextMenus"
-  ]
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  //   "page_action": {
+  //     "default_popup": "popup.html"
+  //   },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["main.js", "background.js"]
+  },
+  "icons": {
+    "16": "icon-16.png"
+    //      "48": "icon-small.png",
+    //      "128": "icon-large.png"
+  },
+  "permissions": ["activeTab", "storage", "contextMenus", "tabs"]
 }
