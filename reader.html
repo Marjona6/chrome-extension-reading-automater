@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reading List Automater: Reader</title>
+    <style>
+      #article {
+        min-height: 95vh;
+        display: flex;
+        background: darkblue;
+        width: 100vw;
+        margin-left: -8px;
+        margin-top: -8px;
+      }
+      #article > p {
+        color: seashell;
+      }
+      #controls {
+        min-height: 5vh;
+        display: flex;
+        width: 100vw;
+        margin-left: -8px;
+        flex-direction: row;
+        background: seashell;
+        align-content: center;
+        margin-bottom: -8px;
+      }
+    </style>
+    <script src="reader.js"></script>
+  </head>
+  <body>
+    <div id="article"><p>ACTUAL ARTICLES GO HERE</p></div>
+    <div id="controls">
+      <button type="text">On to the next</button>
+      <button type="text">Mark as read and stop reading</button>
+      <button type="text">Mark as unread and stop reading</button>
+    </div>
+  </body>
+</html>

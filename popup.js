@@ -13,7 +13,6 @@
 
 // for automatically loading the reading browser at a set time/date
 const openBrowserWindow = url => {
-  alert("boy howdy!");
   chrome.windows.create({
     url: url,
     state: "fullscreen",
@@ -21,20 +20,22 @@ const openBrowserWindow = url => {
     type: "popup"
   });
 };
-// always waits the document to be loaded when shown
+
+// start here
 window.addEventListener("DOMContentLoaded", () => {
   // opens a communication between scripts
   //   const port = chrome.runtime.connect();
 
-  // listens to the click of the button into the popup content
+  document.getElementById("add-to-list").addEventListener("click", () => {
+    alert("Added to list! Just kidding. Be patient!");
+  });
+
+  document.getElementById("start-reading-now").addEventListener("click", () => {
+    openBrowserWindow("reader.html");
+  });
+
   document.getElementById("settings").addEventListener("click", () => {
-    alert("wahoo");
     openBrowserWindow("options.html");
-    // sends a message throw the communication port
-    // port.postMessage({
-    //     'from': 'popup',
-    //     'start': 'Y'
-    // });
   });
 
   const datepicker = document.getElementById("datepicker");
