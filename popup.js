@@ -18,7 +18,7 @@ const openBrowserWindow = url => {
     url: url,
     state: "fullscreen",
     focused: true,
-    type: "normal"
+    type: "popup"
   });
 };
 // always waits the document to be loaded when shown
